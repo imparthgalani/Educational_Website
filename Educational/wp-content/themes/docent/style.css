@@ -1,0 +1,472 @@
+/*
+Theme Name: Docent
+Author: Themeum
+Author URI: https://www.themeum.com
+Version: 1.1.0
+Description: Docent is a free WordPress LMS theme for individual educators, and it is made to be the complete package for that purpose. Create instructor profiles, offer insightful courses, and intuitive quizzes, all in style with Docent’s elegant design. Having a complete focus on its niche, it is designed to offer the best experience for both the learners and the instructors. Docent comes with Tutor LMS inside. Tutor LMS is a powerful WordPress LMS plugin perfectly suited for an individual educator. With the features like frontend drag-and-drop course builder, advanced quiz creator, dashboard analytics, and intuitive UI & UX design, it’s super easy to start an eLearning site. Docent has full support for the Gutenberg editor and is built using Qubely blocks. This makes the theme completely customizable and flexible. Moreover, it also scales perfectly with Qubely’s complete control over responsiveness. Qubely offers 61 free sections along with 26+ advanced blocks to cover all your Gutenberg page building needs. Plus, all other Gutenberg block plugins are also supported. 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: docent
+Tags: right-sidebar, one-column, two-columns, custom-background, custom-menu, featured-images, sticky-post, translation-ready, blog
+*/
+
+/* -------------------------------------- *
+*           Default WP CSS                *
+* --------------------------------------- */
+a {
+    text-decoration: none !important;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+/* a:focus {
+    outline: 0;
+    outline-offset: 0;
+} */
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+.hfeed {
+    overflow: hidden;
+}
+.gallery-caption {
+    font-size: 12px;
+}
+.bypostauthor {
+    font-size: 12px;
+}
+.wp-block-cover p {
+    line-height: 1;
+}
+
+.entry-summary > * {
+    margin-bottom: 20px;
+}
+.wp-block-button__link {
+    border-radius: 2px;
+}
+.blog-content-wrapper .docent-blog-title .wp-block-cover a {
+    color: #fff;
+}
+ul.wp-block-archives ul,
+.wp-block-categories ul,
+.wp-block-latest-posts ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.wp-block-archives li,
+.wp-block-categories li,
+.wp-block-latest-posts li {
+  line-height: 1.2;
+  padding-bottom: 0.75rem;
+}
+
+.wp-block-categories,
+.wp-block-archives {
+    list-style: none;
+}
+.comment-content > * {
+    margin-bottom: 20px;
+}
+
+.page-links {
+    clear: both;
+}
+
+/* -------------------------------------- *
+*           WordPress Core                *
+* --------------------------------------- */
+.components-base-control__field input{
+    margin: 1px;
+}
+.alignnone {
+    margin: 5px 30px 20px 0px;
+}
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+.alignleft {
+    float: left;
+    margin: 5px 30px 20px 0;
+}
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+}
+.wp-caption.alignnone {
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+}
+.aligncenter, div.aligncenter {
+    width: 100% !important;
+}
+.post-password-form input[type=submit] {
+    padding: 6px 20px;
+}
+.single .docent-post.hentry .content-item-title {
+    -ms-word-wrap: break-word;
+    word-break: break-word;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+#loginform{
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 40px 30px 20px;
+    border: 1px solid #e7e7e7;
+}
+.post-meta-info-list-in a {
+    color: #5a5a5a;
+    border-radius: 4px;
+    padding: 0;
+    margin-right: 14px;
+    transition: 400ms;
+}
+.post-meta-info-list-in a:hover{
+    color: #fff;
+}
+.post-meta-info-list-in{
+    margin: 40px 0 20px;
+}
+.novisible{
+    visibility: hidden;
+}
+.docent-navbar-brand h1{
+    color: #ffffff;
+}
+.comingsoon-content .mc4wp-alert {
+    display: inline-block;
+    color: #00bf9a;
+}
+.generic-padding > .container{
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.breadcrumb span a:after {
+    content: "/";
+    padding: 7px;
+}
+.breadcrumb span.raquo {
+    color: #fff;
+}
+.subtitle-cover .breadcrumb a {
+    color: #000;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/***********/
+.head-hide,
+.footer-hide {
+    display: none;
+}
+.wp-color-result-text{
+    padding: 1px 6px !important;
+}
+.wp-picker-holder{
+    z-index: 999999 !important;
+}
+.breadcrumb li.active {
+    color: #fff !important;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.page-leading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 34px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.59px;
+    text-align: center;
+    color: #1f2949;
+}
+.blog-navigation h1.search-title {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.color-text {
+    color: #70d133 !important;
+    font-weight: 400;
+}
+.footer-theme-design a {
+    color: #fafafa;
+    transition: .3s;
+}
+.footer-theme-design a:hover {
+    color: #e2f7d7;
+}
+.wppb-builder-addon img.alignnone {
+    padding-top: 36px;
+    padding-bottom: 15px;
+}
+.menu-footer-menu a {
+    transition: .3s;
+}
+.bottom-widget .mc4wp-form input[type="email"]:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #1b52d8;
+    box-shadow: none;
+}
+ul.wppb-tab-nav .wppb-tab-nav-list .wppb-tab-nav-list-wrap {
+    margin: 0px !important;
+}
+.single-blog-style .blog-content-wrapper .blog-comments-section ul {
+    margin-bottom: 45px;
+}
+.blog-content-wrapper .thm-profile:hover h3.thm-profile-title a {
+    color: #70d133;
+}
+.arrow-button-left1 i.fa.fa-long-arrow-left,
+.arrow-button-right i.fa.fa-long-arrow-right{
+    transition: .3s;
+    margin-top: 17px;
+}
+.wppb-tab-nav-list-wrap {
+    transition: .3s;
+}
+.wppb-feature-box-title {
+    transition: .3s;
+}
+.docent-navbar-header .docent-navbar-brand img {
+    max-width: 90px;
+}
+.blog-navigation {
+    width: 100%;
+}
+.common-menu.menu-right {
+    border: solid 1px #ffffff;
+    margin-right: 0;
+}
+.col-sm-6.col-md-2.col-lg-2.col-6.logo-center, .col-md-12.col-lg-5.common-menu.menu-left {
+    border: solid 1px #ffffff;
+    margin-right: 0;
+}
+.wpmm-logo-item {
+    position: absolute;
+    top: -17px;
+}
+.common-menu-wrap .nav>li ul li:hover>ul {
+    animation: menuslide 300ms;
+}
+
+li.cat-item-none {
+    padding: 0 10px;
+}
+.boxwidth .entry-content .alignfull {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+.boxwidth .qubely-section {
+    padding: 0 !important;
+}
+
+.boxwidth .header-search-input-wrap {
+    max-width: 1240px;
+    height: 79px;
+    margin: 0 auto;
+}
+
+.subscription-details span.trial, .subscription-details .amount {
+    font-size: 15px !important;
+    color: #535967;
+    font-weight: 400;
+}
+.subscription-details .amount {
+    font-weight: 700;
+}
+
+
+
+.review-wrap {
+    border-radius: 4px;
+    border: solid 1px #dcdfe5;
+    background-color: #fbfbfc;
+    padding: 35px 43px;
+}
+.review-wrap #order_review_heading {
+    padding: 0;
+    margin: 0;
+    font-size: 34px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3057d5;
+    margin-bottom: 20px;
+}
+.review-wrap p {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #606c8f;
+}
+
+.review-wrap #order_review {
+    margin: 0;
+}
+.woocommerce ul.products li.product .button {
+    color: #fff;
+    padding: 14px 22px;
+}
+
+/* Accessibility */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 150px;
+    max-width: 150px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+  }
+  
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    right: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+  }
+  
+  /* Do not show the outline on the skip link target. */
+  #content[tabindex="-1"]:focus {
+    outline: 0;
+  }
+
+  .menu li {
+    margin-bottom: 0;
+    position: relative;
+    display: inline-grid;
+}
